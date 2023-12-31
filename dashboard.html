@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>Welcome to Your Dashboard</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#logout">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="createChatSection" class="container">
+      <h3>Create New Chat</h3>
+      <form action="#" method="post">
+        <label for="chatName">Chat Name:</label>
+        <input type="text" id="chatName" name="chatName" required />
+
+        <button type="submit">Create Chat</button>
+      </form>
+    </section>
+
+    <section id="uploadFileSection" class="container">
+      <h3>Upload File</h3>
+      <div id="dragAndDrop">
+        <p>Drag and drop your file here</p>
+        <input type="file" id="fileUpload" accept=".pdf, .doc, .txt" />
+        <label for="fileUpload">or choose a file</label>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

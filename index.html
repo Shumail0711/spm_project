@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FileChat Insights</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Empower Your Documents with FileChat Insights!</h1>
+      <p>Unlock file insights, ask questions, and receive summaries effortlessly.</p>
+      <a href="dashboard.html" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature-card">
+        <img src="fil_sum.png" alt="Summarization Icon" />
+        <h3>File Summarization</h3>
+        <p>Automated extraction of key information from various file formats with concise summaries.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="QAns.jpg" alt="Q&A Icon" />
+        <h3>Question and Answer (Q&A)</h3>
+        <p>User-friendly interface for asking questions related to file content with intelligent responses.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="offline.png" alt="Offline Icon" />
+        <h3>Offline Mode</h3>
+        <p>Run the application without an internet connection, ensuring accessibility in various environments.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="customize.jpg" alt="Customization Icon" />
+        <h3>Customization Options</h3>
+        <p>
+          Settings to customize summarization preferences and output format, theming options for interface
+          customization.
+        </p>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+      <div class="dashboard-container">
+        <div class="summarizationupload-section">
+          <h2>1. Upload Your File</h2>
+          <button onclick="uploadFile()">Upload File</button>
+          <div id="uploadResult"></div>
+        </div>
+
+        <div class="chatbot-section">
+          <h2>2. Interact with Chatbot</h2>
+          <div class="chat-interface">
+            <!-- Assume there is a chatbot UI here -->
+            <div class="chat-message">Welcome! Upload a file to get started.</div>
+          </div>
+          <textarea id="userQuestion" placeholder="Ask a question..."></textarea>
+          <button onclick="askQuestion()">Ask</button>
+        </div>
+
+        <div class="summarizationupload-section">
+          <h2>3. File Summarization</h2>
+          <button onclick="summarizeFile()">Summarize File</button>
+          <div id="summarizationResult"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h2>Pricing</h2>
+      <p>Great news! Our application is completely free to use. No hidden charges or subscription fees.</p>
+      <p>Enjoy all the features without any cost.</p>
+    </section>
+
+    <!-- ... Other sections ... -->
+
+    <footer>
+      <p>&copy; 2023 FileChat Insights. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#terms-of-service">Terms of Service</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+      <div class="social-media-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <a href="#top" class="back-to-top">Back to Top</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

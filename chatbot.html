@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chatbot.css" />
+    <title>ChatBot</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>FileChat Bot</h2>
+        <button id="toggleMode">Toggle Mode</button>
+      </div>
+    </header>
+
+    <section id="chatbotSection" class="container">
+      <div class="chat-interface">
+        <div class="chat-message">Welcome! Upload a file to get started.</div>
+      </div>
+      <textarea id="userQuestion" placeholder="Ask a question..."></textarea>
+      <button onclick="askQuestion()">Ask</button>
+
+      <label for="fileUpload" class="upload-button">Choose File</label>
+      <input type="file" id="fileUpload" accept=".pdf, .doc, .txt" style="display: none" />
+      <button onclick="summarizeFile()">Summarize File</button>
+      <div id="summarizationResult"></div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 FileChat Insights. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>

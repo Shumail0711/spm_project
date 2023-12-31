@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you!</p>
+    </header>
+
+    <form action="https://httpbin.org/post" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Your First Name"
+            autocomplete="on"
+            required
+            autofocus
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" autocomplete="on" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Your Phone Number"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ease of Use</legend>
+        <div class="form-group">
+          <input type="radio" name="use" id="easy" value="Easy" />
+          <label for="easy">Easy</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="use" id="hard" value="Hard" />
+          <label for="hard">Hard</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="use" id="medium" value="Medium" />
+          <label for="medium">Medium</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do You Like This App?</legend>
+        <div class="form-group">
+          <input type="checkbox" name="like" id="yes" value="Yes" />
+          <label for="yes">Yes</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="like" id="no" value="No" />
+          <label for="no">No</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Any Suggestions</legend>
+        <div class="form-group">
+          <label for="suggestion">Your Suggestions</label>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            cols="30"
+            rows="5"
+            placeholder="Type your suggestion here"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Any Issues Related to the App</legend>
+        <div class="form-group">
+          <label for="issue">Your Issues</label>
+          <textarea name="issue" id="issue" cols="30" rows="5" placeholder="Type your issue here"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <footer>
+      <p>
+        <a href="index.html">Back to Home Page</a>
+      </p>
+    </footer>
+  </body>
+</html>
